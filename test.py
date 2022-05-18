@@ -12,32 +12,24 @@ print(f"have you done this quiz before {name}?: ")
 
 while True:
 
-    value = randint(1,10)
+    value = randint(1, 10)
 
 
     answer = input()
 # if user says y the program continues
     if answer == "y":
         print("continuing to quiz...")
-        print(value )
+        print(value)
 # if user says n show how the quiz works
     elif answer == "n":
         print("this is a quiz that will generate random numbers and you have to guess in maori")
-        print(value )
-
-        break
+        print(value)
 
 # if user doesn't type y or n loop back
     else:
-        print("please enter y or n: ")
+        if answer == "y":
+            print(f"whats this number in maori {name}?:" )
 
-1 == "tahi"
-2 == "rua"
-3 == "toru"
-4 == "wha"
-5 == "rima"
-6 == "ono"
-7 == "whitu"
-8 == "waru"
-9 == "iwa"
-10 == "tekau"
+
+
+
