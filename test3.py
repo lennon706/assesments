@@ -168,8 +168,10 @@ if attempt == answer:
 else:
     print("incorrect")
 
+# shows score
 print(f"{name}'s score is")
 print(score)
 print("out")
 print("of")
 print("10")
+print("thanks for doing this small quiz")
