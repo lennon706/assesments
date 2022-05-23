@@ -14,15 +14,28 @@ name = input()
 
 print(f"the quiz is about to begin {name}! ")
 
+numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
-for _ in range(10):
-    value = randint(1, 10)
+words = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu", "waru", "iwa", "tekau"]
+
+for _ in range(1):
+    value = random(1, 10)
 
     print(value)
 
+question = random.choice(numbers)
+attempt = input(f"what is the maori word for this number {name} {question}: ")
 
-print(f"what is that in maori {name}?: ")
+# part of the code
+answer_index = numbers.index(question)
+answer = words[answer_index]
 
-if 1 == "tahi":
+# checks if you have he right answer
+if attempt == answer:
     print("correct")
+
+else:
+    print("incorrect")
+
+
 
